@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+--eerie-black: hsla(0, 0%, 15%, 1);
+--cream: hsla(70, 97%, 88%, 1);
+--sea-green: hsla(147, 93%, 28%, 1);
+--rose: hsla(334, 95%, 57%, 1);
+--ucla-blue: hsla(202, 66%, 39%, 1);
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;    
+    background-color: var(--ucla-blue);
+   
+}
+
+.playerName h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--cream);
+    margin-bottom: 5px;
+    cursor:pointer;
+    transition: text-shadow 0.3s ease;
+}
+
+.playerName h1:hover{
+    text-shadow: 10px 10px 10px hsla(0, 3%, 7%, 0.8);
+}
+
+.container{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+.ResourceContainer{
+    padding: 10px;
+    background-color: var(--cream);
+    color: var(--eerie-black);
+    margin-bottom: 5px;
+    border-radius: 15px;
+   }
+
+.ResourceContainer p{
+font-size: 1.4rem;
+margin-bottom: 5px;
+}
+
+.ResourceContainer span{
+    font-weight: 800;
+}
+
+.buttonContainer{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonContainer button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: var(--sea-green);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--cream);
+    transition: all 0.2s ease;
+}
+
+.buttonContainer button:hover{
+    background-color: var(--ucla-blue);
+    color: var(--eerie-black);
+}
+
+.buttonContainer button:active{
+    background-color: var(--rose);
+}
+
+.playerInput{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px;
+}
+
+.playerInput input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: var(--cream);
+}
+
+.playerInput button{
+
+    border: none;
+    background-color: var(--sea-green);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--cream);
+    transition: all 0.2s ease;
+}
+
+.playerInput button:hover{
+    background-color:var(--cream);
+    color: var(--eerie-black);
+}
+
+@media (max-width:500px) {
+
+    .buttonContainer button{
+        width: 150px;
+        height: 75px;
+    }
+
+   
+
+}
+
+
+
+
+
